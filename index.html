@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01. JS Base</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+    <script src="theory.js" defer></script>
+
+</head>
+<body class="bg-dark text-light">
+    <div class="container w-50 tp-5">
+        <h1>Калькулятор</h1>
+        <input 
+           type="number" 
+           class="form-control mb-2"
+           placeholder="Введите 1 число"
+           id="input1"
+           value="10"
+        />
+        <input 
+           type="number" 
+           class="form-control mb-2"
+           placeholder="Введите 2 число"
+           id="input2"
+           value="5"
+        />
+        <div class="d-flex mb-2">
+            <button class="btn btn-success flex-grow-1 mx-2" id="plus">+</button>
+            <button class="btn btn-danger flex-grow-1 mx-2" id="minus">-</button>
+            <button class="btn btn-multip flex-grow-1 mx-2" id="multiplication">*</button>
+            <button class="btn btn-division flex-grow-1 mx-2" id="division">/</button>
+            <button class="btn btn-cube flex-grow-1 mx-2" id="cube">^</button>
+        </div>
+        <button class="btn btn-outline-info w-100 mb-2" id="submit">
+            Вычислить
+        </button>
+
+        <div class="text-bg-light p-3 text-center">
+            <h3>Результат:</h3>
+            <p id="result" class="mb-0">49</p>
+        </div>
+    </div>
+</body>
+</html>
